@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -9,6 +13,17 @@ html, body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.header-box img {
+    width: 140px;
+    height: 50px;
+    margin: 10px;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
 }
 
 .icon-box i {
@@ -34,7 +49,7 @@ html, body {
     font-size: 1.125rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    margin-bottom: 0;
+    margin: 1rem;
 }
 
 .navbar-list {
@@ -48,9 +63,29 @@ html, body {
     font-size: 1rem;
 }
 
+.anuario-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    color: #B34353;
+}
+
+.anuario-links i {
+    color: #B34353;
+}
+
+/* Accordion */
+
+.accordion-item h2 {
+    font-size: 1.375rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
 /* Medias */
 
 @media (max-width: 425px) {
+
     .navbar-list {
         display: none;
     }
