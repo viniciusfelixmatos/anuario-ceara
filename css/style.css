@@ -26,9 +26,32 @@ html, body {
     align-items: center;
 }
 
+.hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #B34353;
+    border-radius: 2px;
+}
+
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+    width: 100%;
+}
+
+.hamburger span:nth-child(2) {
+    width: 60%;
+}
+
 .icon-box i {
     font-size: 1.5rem;
-    font-weight: 100;
     color: #B34353;
 }
 
@@ -63,17 +86,51 @@ html, body {
     font-size: 1rem;
 }
 
+
+.anuario-links {
+    margin-top: 2.5rem;
+}
+
 .anuario-links a {
     font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     color: #B34353;
 }
 
+.anuario-links a:last-of-type {
+    color: #999999;
+    text-decoration: none;
+}
+
 .anuario-links i {
     color: #B34353;
 }
 
+.anuario-content {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.anuario-content h2 {
+    font-size: 1.375rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4375rem;
+}
+
 /* Accordion */
+
+.accordion-item {
+    border: none;
+}
 
 .accordion-item h2 {
     font-size: 1.375rem;
@@ -81,6 +138,43 @@ html, body {
     font-weight: bold;
 }
 
+.accordion-button {
+  position: relative;
+  padding-left: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '+';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: #272727;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    transition: content 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::before {
+  content: '×';
+}
 
 /* Medias */
 
