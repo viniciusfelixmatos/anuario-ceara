@@ -37,7 +37,7 @@ html, body {
 .hamburger span {
     display: block;
     height: 3px;
-    background: #B34353;
+    background: #B34353 0% 0% no-repeat padding-box;
     border-radius: 2px;
 }
 
@@ -86,6 +86,18 @@ html, body {
     font-size: 1rem;
 }
 
+.navbar-list li:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    color:pink;
+}
+
+li:hover::after {
+    content: "";
+    width: 100%;
+
+}
 
 .anuario-links {
     margin-top: 2.5rem;
@@ -174,6 +186,33 @@ html, body {
 
 .accordion-button:not(.collapsed)::before {
   content: '×';
+}
+
+.accordion-button:not(.collapsed) {
+    color: #B34353;
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::before {
+    background-color: #B34353;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    max-width: 610px;
+    max-height: 775px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
 }
 
 /* Medias */
