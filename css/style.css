@@ -36,14 +36,14 @@ html, body {
 
 .hamburger:hover {
     cursor: pointer;
-    transform:scale(1.2);
+    transform:scale(1.1);
     transition: all 0.4s ease;
 }
 
-.search-box:hover {
-    cursor: pointer;
-    transform: scale (1.2);
+.icon-box:hover {
+    transform: scale(1.2);
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -63,7 +63,7 @@ html, body {
 }
 
 .icon-box i {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     color: #B34353;
 }
 
@@ -193,6 +193,15 @@ html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.375rem;
+}
+
+.accordion-button:hover {
+    color: #B34353;
+    box-shadow: none;
+}
+
+.accordion-button:hover::before {
+    background-color: #B34353;
 }
 
 .accordion-button::after {
