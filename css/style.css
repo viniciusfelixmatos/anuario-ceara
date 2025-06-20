@@ -24,47 +24,36 @@ html, body {
 .icon-box {
     display: flex;
     align-items: center;
-}
-
-.hamburger {
-    width: 30px;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hamburger:hover {
     cursor: pointer;
-    transform:scale(1.1);
-    transition: all 0.4s ease;
 }
 
 .icon-box:hover {
     transform: scale(1.2);
     transition: all 0.4s ease;
-    cursor: pointer;
 }
 
-.hamburger span {
-    display: block;
-    height: 3px;
-    background: #B34353 0% 0% no-repeat padding-box;
-    border-radius: 2px;
+.hamburger {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hamburger span:nth-child(1),
-.hamburger span:nth-child(3) {
+.hamburger img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.4s ease;
 }
 
-.hamburger span:nth-child(2) {
-    width: 60%;
+.hamburger:hover img {
+    transform: scale(1.1);
 }
 
-.icon-box i {
-    font-size: 1.625rem;
-    color: #B34353;
+.search-box img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Navbar */
@@ -98,34 +87,11 @@ html, body {
     font-size: 1rem;
 }
 
-.li::after {
-    content: "";
-    text-align: center;
-    display: block;
-    border: 0;
-    border-top: 0.3125rem solid #FFFFFF; 
-    width: 6.25rem;
-    margin-top: 1.875rem;
-    opacity: 1; 
-    z-index: 10; 
-} 
-
 .navbar-list li:hover {
     transform: scale(1.1);
     color: #FFFFFF;
     transition: all 0.4s ease;
     cursor: pointer;
-}
-
-.navbar-list li::after {
-    position: absolute;
-    display: block;
-    content: "";
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 2px solid #FFFFFF;
-    transition: all 0.4s ease;
 }
 
 .anuario-links {
@@ -259,8 +225,12 @@ html, body {
 }
 
 .accordion-body img {
-    max-width: 610px;
-    max-height: 775px;
+  width: 100%;
+  max-width: 610px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 /* Medias */
