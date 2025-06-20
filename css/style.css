@@ -144,90 +144,84 @@ html, body {
 /* Accordion */
 
 .accordion-item {
-    border: none;
+  border: none;
 }
 
 .accordion-item h2 {
-    font-size: 1.375rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+  font-size: 1.375rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .accordion-button {
   position: relative;
-  padding-left: 40px;
+  padding-left: 48px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.375rem;
 }
 
 .accordion-button:hover {
-    color: #B34353;
-    box-shadow: none;
+  color: #B34353;
+  box-shadow: none;
 }
 
 .accordion-button:hover::before {
-    background-color: #B34353;
+  background-color: #B34353;
 }
 
 .accordion-button::after {
-    display: none;
+  display: none;
 }
 
 .accordion-button::before {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    content: '+';
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px;
-    height: 25px;
-    background-color: #272727;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-    line-height: 32px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    transition: content 0.3s ease;
+  content: '+';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-color: #272727;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #B34353;
-    background-color: inherit;
-    box-shadow: none;
+  color: #B34353;
+  background-color: inherit;
+  box-shadow: none;
 }
 
 .accordion-button:not(.collapsed)::before {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 38px;
-    content: '-';
-    background-color: #B34353;
+  content: '-';
+  background-color: #B34353;
 }
 
+
 .accordion-button:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .accordion-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .accordion-body img {
   width: 100%;
-  max-width: 610px;
-  height: auto;
+  max-width: 800px;
+  height: 775px;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
